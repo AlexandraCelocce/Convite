@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+:root {
+    --black: #9817d4;
+    --white: #FFFFFC;
+    --pink: #ffa600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pink)
+}
+
+h1 {
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 0.2188rem var(--pink);
+}
+
+h1:hover {
+    color: var(--pink);
+    -webkit-text-stroke: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.text {
+    width: 40%;
+    margin-left: 4.375rem;
+}
+
+.background {
+    padding-top: 3.125rem;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Welcome page */
+
+.container-welcome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.welcome-text {
+    width: 40%;
+    margin-top: 3.125rem;
+    margin-left: 4.375rem;
+}
+
+.welcome-text p {
+    text-align: justify;
+    width: 70%;
+    margin: 0.9375rem 0rem 0.9375rem 0rem;
+}
+
+.welcome-img {
+    width: 65%;
+    height: auto;
+    position: relative;
+    right: 35px;
+}
+
+.welcome-img img {
+    width: 100%;
+    height: auto;
+    transition: all 300ms ease-in-out;
+}
+
+.welcome-img img:hover {
+    margin-top: 1.25rem;
+    width: 85%;
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+footer {
+    height: 3.125rem;
+    background-color: var(--pink);
+    margin-top: 3.125rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 0.625rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    background-color: var(--black);
+}
